@@ -2,6 +2,7 @@
   "name": "home-away",
   "version": "0.1.0",
   "private": true,
+  "packageManager": "npm@9.8.1",
   "scripts": {
     "dev": "next dev",
     "build": "npx prisma generate && next build",
