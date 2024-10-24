@@ -11,6 +11,7 @@ export default async function PropertiesContainer({
   search?: string;
 }): Promise<JSX.Element> {
   const properties: PropertyCardProps[] = await fetchProperties({ category, search });
+  console.log('properties', properties);
   if (properties.length === 0)
     return (
       <EmptyList

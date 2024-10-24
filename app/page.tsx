@@ -8,6 +8,7 @@ export default function HomePage({
 }: {
   searchParams: { category?: string; search?: string };
 }): JSX.Element {
+  console.log('category', searchParams.category, searchParams.search);
   return (
     <section>
       <CategoriesList category={searchParams.category} search={searchParams.search} />
